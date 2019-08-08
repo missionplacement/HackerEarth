@@ -23,3 +23,28 @@ int main()
     cout<<"NO";
     return 0;
 }
+######################################################3
+python solution passed in hackerearth
+def main():
+  n=(input())
+  #list(n)
+  l=[c for c in n]
+  l1=l[::-1]
+  #print(l)
+  #print(l1)
+  result=list()
+  for i in range(len(l)):
+    if(l[i]==l1[i]):
+      result.append('YES')
+    else:
+      result.append('NO')
+    
+  #print(result)
+
+  if 'NO' in result:
+    print('NO')
+  else:
+    print('YES')
+    
+if __name__=="__main__":
+  main()
