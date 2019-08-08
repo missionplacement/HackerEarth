@@ -1,0 +1,25 @@
+Link is Provided With Code Getting an  Runtime Error - SIGABRT Error
+Please Solve
+
+https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/palindrome-check-2/
+
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main()
+{
+    int i,count=1,l;
+    char name[20];
+    cin>>name;
+    l=strlen(name);
+    for(i=0;i<=l;i++)
+    {
+        if(name[i]==name[l-i-1])
+        count=0;
+    }
+    if(count==0)
+    cout<<"YES";
+    else
+    cout<<"NO";
+    return 0;
+}
