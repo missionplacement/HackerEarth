@@ -2,19 +2,19 @@ https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-in
 
 Python Code
 
+from collections import Counter
 n=int(input())
+l=list()
 for i in range(n):
-    count=0
-    string1=list(input())
-    string2=list(input())
-    if(len(string1)<len(string2)):
-        for i in string1:
-            if i in string2:
-                count=count+1
-    else:
-        for i in string2:
-            if i in string1:
-                count=count+1
-    print(len(string1)+len(string2)-2*count)
-                
     
+    a=Counter(input())
+    b=Counter(input())
+    c=a-b
+    d=b-a
+    e=c+d
+    #print(c)
+    #print(d)
+
+    l.append(len(list(e.elements())))
+for i in range(len(l)):
+    print(l[i])
